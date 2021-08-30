@@ -3,6 +3,11 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	padding: 5px 15px;
+	position: fixed;
+	top: 0%;
+	z-index: 999;
+	background-color: whitesmoke;
+	width: 100%;
 	
 }
 .nav-header{
@@ -47,16 +52,24 @@ nav{
 	  
   } 
    .menu > ul > li{
-  padding:20px ;
+  padding:0px 20px ;
   } 
   .right-button > button{
   
 	  background-color: #44805c ;
 	  color: white;
-	  border-radius: 5%;
-	  font-size: 100%;
+	  border-radius: 10%;
+	  font-size: 24px;
 	  
   }
+  .button-button > button{
+  
+	background-color: #44805c ;
+	color: white;
+	border-radius: 5%;
+	font-size: 100%;
+	
+}
   .sidebar{
 	
 	background-color:#235c48!important; 
@@ -141,14 +154,14 @@ nav{
 		display: block;
 		width: 0%;
 	}
-	.font{
+	.font> h3{
 		font-size: 58px !important;
 		color: #44805c;
-	padding-bottom: 5%;
-	margin-top: 5%;
-	margin-left: 35%;
-	margin-right: 32%;
+	   	padding-bottom: 5%;
+		margin-top: 5%;
+		
 	}
+	
 }
 
 @media screen and (max-width: 768px){
@@ -160,13 +173,26 @@ nav{
 	.nav-header{
 		display: block;
 		display: flex;
+		margin-bottom: 0% !important;
+	}
+	.font{
+		padding-top: 5% !important;
 	}
 	.display{
 		display: none!important;
 	}
+	.signup-now{
+		font-size: 36px !important;
+	}
+	.signup-text{
+		font-size: 25px !important;
+	}
 	.cards{
-		width: 110% !important;
+		width: 100% !important;
 		height: 780px !important;
+		margin-left: 5% !important;
+		margin-right:5% !important;
+		box-sizing: content-box;
 	}
 	.card2{
 		height: 170px!important;
@@ -195,6 +221,24 @@ nav{
 		padding-left: 10% !important;
 		padding-right: 5% !important;
 	}
+	.font >h3{
+		padding-top: 15% !important;
+		font-size: 25px !important;
+		padding-left: 0% !important;
+	}
+	/* .button-button >button{
+		font-size: 14px !important;
+	} */
+	/* .footer{
+		display: none;
+	}
+	.footer-align{
+		display: flex !important;
+		flex-direction: column !important;
+		text-align: left !important;
+		align-items: left !important;
+		padding-left: 0 !important;
+	} */
 	
 }
 @media (min-width: 769px) and (max-width: 992px){
@@ -253,10 +297,38 @@ nav{
 		color: #44805c;
 	padding-bottom: 5%;
 	margin-top: 5%;
-	margin-left: 35%;
-	margin-right: 32%;
+	margin-left: 8% !important;
+	margin-right: 8% !important;
+		}
+		.menu{
+			display: block;
+			padding-left: 5% !important;
+			padding-right: 5% !important;
+			font-size: 14px !important;
+		}
+		.img-container{
+			display: block;
+			padding-left: 65% !important;
+		}
+		.right-button {
+			display: block;
+			padding-right: 3% !important;
+			display: inline-block !important;
+			
+		}
+		.nav-header{
+			display: block;
+		}
 		
-	}
+		.menu__bar{
+			display: none;
+		}
+		.button-button{
+			align-items: center !important;
+		}
+		.button>button{
+			text-align: center !important;
+		}
 
 }
 
@@ -292,16 +364,15 @@ nav{
 	
 
 }
-.font{
+.font> h3{
+	font-size: 42px;
 	color: #44805c;
-	
-	text-align: center;
-	font-size: 58px !important;
-	padding-bottom: 5%;
-	margin-top: 5%;
-	margin-left: 35%;
+	 padding-bottom: 5%;
+	margin-top: 0%;
+	margin-left: 32%;
 	margin-right: 32%;
-
+	text-align: center;
+	
 }
 .arrange{
 	padding-left: 40%;
@@ -313,6 +384,10 @@ nav{
     color: #44805c;
 	
 } 
+.signup-text{
+    color: #44805c;
+	
+}
 .row{
 	font-size: 16px;
 	/* text-align: center; */
