@@ -40,7 +40,7 @@ nav{
   }
   
   .img-container > img{
-	  width: 80px;
+	  width: 120px;
 	  height: 80px;
   }
    .menu > ul{
@@ -161,10 +161,18 @@ nav{
 		margin-top: 5%;
 		
 	}
-	
+	.signup-now{
+		margin-left: 32% !important;
+		margin-right: 32% !important;
+	}
+	.signup-text{
+		margin-left: 33% !important;
+		margin-right: 33% !important;
+		
+	}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 640px){
     
 	.menu{
 		display: none;
@@ -190,9 +198,7 @@ nav{
 	.cards{
 		width: 100% !important;
 		height: 780px !important;
-		margin-left: 5% !important;
-		margin-right:5% !important;
-		box-sizing: content-box;
+		
 	}
 	.card2{
 		height: 170px!important;
@@ -239,6 +245,85 @@ nav{
 		align-items: left !important;
 		padding-left: 0 !important;
 	} */
+	
+}
+@media (min-width: 641px) and (max-width: 768px) {
+
+		.menu{
+		display: none;
+		
+	}
+	.nav-header{
+		display: block;
+		display: flex;
+		margin-bottom: 0% !important;
+	}
+	.font{
+		padding-top: 5% !important;
+	}
+	/* .display{
+		display: block!important;
+		display: flex;
+		padding-top: 5px !important;
+	} */
+	.text{
+		display: flex !important;
+		
+	}
+	.alignment{
+		text-align: left !important;
+		align-items: left !important;
+		font-size: 18px !important;
+		padding-top: 5% !important;
+	}
+
+	.signup-now{
+		font-size: 35px !important;
+	}
+	.signup-text{
+		font-size: 25px !important;
+		margin-left: 12% !important;
+		margin-right: 12% !important;
+	}
+	.cards{
+		width: 100% !important;
+		height: 1000px !important;
+		
+	}
+	.card2{
+		height: 370px!important;
+		width: 85% !important;
+		margin-left: 8% !important;
+		border-radius: 9px;
+		margin-left: 15%;
+ 	}
+	
+	.card1{
+		height: 370px !important;
+		width: 85% !important;
+		margin-left: 8% !important;
+		border-radius: 9px;
+		margin-left: 15%;
+	}
+	.alignment{
+		display: flex;
+		text-align: left !important;
+		align-items: left !important;
+		padding-left: 15% !important;
+	}
+	.container-fluid{
+		align-items: center !important;
+		
+		padding-left: 10% !important;
+		padding-right: 5% !important;
+	}
+	.font >h3{
+		padding-top: 15% !important;
+		font-size: 35px !important;
+		/* padding-left: 0% !important; */
+		margin-left: 17% !important;
+		margin-right: 17% !important;
+	}
 	
 }
 @media (min-width: 769px) and (max-width: 992px){
@@ -295,10 +380,10 @@ nav{
 	.font{
 		font-size: 42px !important;
 		color: #44805c;
-	padding-bottom: 5%;
-	margin-top: 5%;
-	margin-left: 8% !important;
-	margin-right: 8% !important;
+		padding-bottom: 5%;
+		margin-top: 5%;
+		margin-left: 8% !important;
+		margin-right: 8% !important;
 		}
 		.menu{
 			display: block;
