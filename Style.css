@@ -140,7 +140,10 @@ nav{
 	}
 	.container-fluid{
 		display: block;
-	}
+		 align-items: center !important;
+		padding-left: 10% !important;
+		padding-right: 5% !important; 
+	}  
 	.right-button{
 		display: block;
 	}
@@ -185,12 +188,25 @@ nav{
 		   align-items: center !important;
 		   justify-content: center !important;
 	}
-	.arrange{
+	/* .Arrange{
 		display: block !important;
-	}
+	} */
 	.alignment{
-		display: none !important;
+		display: block !important;
+		/* display: flex !important;
+		text-align: left !important;
+		align-items: left !important;
+		padding-left: 10% !important;
+		margin-right: 10% !important;
+		padding-top: 4%!important;	
+		text-align-last: left !important; */
+
 	}
+	/* .tt{
+		display: block !important;
+		align-items: left !important;
+		display: flex;
+	} */
 	.cards{
 	
 		width: 100% !important;
@@ -331,8 +347,7 @@ nav{
 		text-align: left !important;
 		align-items: left !important;
 		padding-left: 15% !important;
-		padding-top: 4%!important;
-		
+		padding-top: 4%!important;	
 
 	}
 	.container-fluid{
