@@ -56,7 +56,7 @@ nav{
   } 
   .right-button > button{
   
-	  background-color: #44805c ;
+	  background-color: #194438 ;
 	  color: white;
 	  border-radius: 10%;
 	  font-size: 24px;
@@ -67,7 +67,9 @@ nav{
 	background-color: #44805c ;
 	color: white;
 	border-radius: 5%;
-	font-size: 100%;
+	font-size: 16px;
+	border: 0px;
+	outline: 0px;
 	
 }
   .sidebar{
@@ -128,7 +130,8 @@ nav{
 .parallel_data{
 	display: none;
 }
-@media  screen and (min-width:993px) {
+
+@media (min-width: 993px) and (max-width: 1023px){
 	.menu{
 		display: block;
 		align-items: center;
@@ -155,10 +158,99 @@ nav{
 		width: 0%;
 	}
 	.font> h3{
-		font-size: 58px !important;
+		font-size: 42px !important;
 		color: #44805c;
 	   	padding-bottom: 5%;
 		margin-top: 5%;
+		margin-left: 32% !important;
+		margin-right: 32% !important;
+		
+	}
+	.signup-now{
+		margin-left: 32% !important;
+		margin-right: 32% !important;
+	}
+	.signup-text{
+		margin-left: 30% !important;
+		margin-right: 30% !important;
+		margin-bottom: 3% !important;
+		
+	}
+	.frow{
+		display: none !important;
+	}
+	.fclass{
+		list-style: none;
+		 display: flex !important;
+		   align-items: center !important;
+		   justify-content: center !important;
+	}
+	.arrange{
+		display: block !important;
+	}
+	.alignment{
+		display: none !important;
+	}
+	.cards{
+	
+		width: 100% !important;
+		height: 950px;
+		border-radius: 9px;
+		color: white;
+		margin-left: 2% !important;
+		margin-right: 2% !important;
+	}
+	.card2{
+	
+		width: 90% !important;
+		height: 410px;
+		border-radius: 9px;
+		margin-left: 5% !important;
+	}
+	.card1{
+	
+		background-color: red;
+		width: 90% !important;
+		height: 410px;
+		border-radius: 9px;
+		margin-left: 5% !important;
+		
+	}
+}
+
+@media  screen and (min-width:1024px) {
+	.menu{
+		display: block;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+	.container-fluid{
+		display: block;
+	}
+	.right-button{
+		display: block;
+	}
+	.button{
+		display: block;
+	}
+	.menu__bar{
+		display: none;
+	}
+	.show_menu{
+		display: none;
+	}
+	.nav-header{
+		display: block;
+		width: 0%;
+	}
+	.font> h3{
+		font-size: 52px !important;
+		color: #44805c;
+	   	padding-bottom: 5%;
+		margin-top: 5%;
+		margin-left: 32% !important;
+		margin-right: 32% !important;
 		
 	}
 	.signup-now{
@@ -169,6 +261,15 @@ nav{
 		margin-left: 33% !important;
 		margin-right: 33% !important;
 		
+	}
+	.frow{
+		display: none !important;
+	}
+	.fclass{
+		list-style: none;
+		 display: flex !important;
+		   align-items: center !important;
+		   justify-content: center !important;
 	}
 }
 
@@ -182,22 +283,32 @@ nav{
 		display: block;
 		display: flex;
 		margin-bottom: 0% !important;
+		margin-left: 7% !important;
 	}
-	.font{
-		padding-top: 5% !important;
+	
+	.font > h3{
+		margin-top: 8% !important;
+		margin-left: 22% !important;
+		margin-right: 22% !important;
+		padding-bottom: 8% !important;
 	}
 	.display{
 		display: none!important;
 	}
 	.signup-now{
-		font-size: 36px !important;
+		font-size: 37px !important;
+		margin-left: 15% !important;
+		margin-right: 15% !important;
 	}
 	.signup-text{
 		font-size: 25px !important;
+		margin-left: 12% !important;
+		margin-right: 12% !important;
+		margin-bottom: 5% !important;
 	}
 	.cards{
 		width: 100% !important;
-		height: 780px !important;
+		height: 650px !important;
 		
 	}
 	.card2{
@@ -220,6 +331,9 @@ nav{
 		text-align: left !important;
 		align-items: left !important;
 		padding-left: 15% !important;
+		padding-top: 4%!important;
+		
+
 	}
 	.container-fluid{
 		align-items: center !important;
@@ -232,20 +346,26 @@ nav{
 		font-size: 25px !important;
 		padding-left: 0% !important;
 	}
-	/* .button-button >button{
-		font-size: 14px !important;
-	} */
-	/* .footer{
-		display: none;
-	}
-	.footer-align{
-		display: flex !important;
-		flex-direction: column !important;
-		text-align: left !important;
-		align-items: left !important;
-		padding-left: 0 !important;
-	} */
 	
+	.frow{
+		display: block;
+		padding-left: 15% !important;
+		padding-right: 15% !important;
+		list-style: none;
+		display: flex;
+   		align-items: center;
+   		justify-content: center;
+	}
+	.fclass{
+		display: none !important;
+	}
+	.button-button > button{
+		border-radius: 8% !important;
+		border-color: #44805c !important;
+		border: none;
+		outline: 0px;
+
+	}
 }
 @media (min-width: 641px) and (max-width: 768px) {
 
@@ -257,15 +377,9 @@ nav{
 		display: block;
 		display: flex;
 		margin-bottom: 0% !important;
+		margin-left: 5% !important;
 	}
-	.font{
-		padding-top: 5% !important;
-	}
-	/* .display{
-		display: block!important;
-		display: flex;
-		padding-top: 5px !important;
-	} */
+	
 	.text{
 		display: flex !important;
 		
@@ -288,6 +402,7 @@ nav{
 	.cards{
 		width: 100% !important;
 		height: 1000px !important;
+		align-items: left !important;
 		
 	}
 	.card2{
@@ -320,11 +435,17 @@ nav{
 	.font >h3{
 		padding-top: 15% !important;
 		font-size: 35px !important;
-		/* padding-left: 0% !important; */
-		margin-left: 17% !important;
-		margin-right: 17% !important;
+		
 	}
-	
+	.fclass{
+		display: none !important;
+	}
+	.frow{
+		text-align: center !important;		
+	}
+	.button-button > button{
+		font-size: 42px !important;
+	}
 }
 @media (min-width: 769px) and (max-width: 992px){
 
@@ -377,19 +498,21 @@ nav{
 	.container-fluid{
 		display: none;
 	}
-	.font{
+	.font > h3{
 		font-size: 42px !important;
 		color: #44805c;
-		padding-bottom: 5%;
-		margin-top: 5%;
-		margin-left: 8% !important;
-		margin-right: 8% !important;
+		padding-bottom: 2%;
+		margin-top: 10% !important;
+		margin-left: 32% !important;
+		margin-right: 32% !important;
 		}
 		.menu{
 			display: block;
 			padding-left: 5% !important;
 			padding-right: 5% !important;
-			font-size: 14px !important;
+			font-size: 12px !important;
+			
+			
 		}
 		.img-container{
 			display: block;
@@ -414,7 +537,26 @@ nav{
 		.button>button{
 			text-align: center !important;
 		}
-
+		.frow{
+			display: none !important;
+		}
+		.fclass{
+			list-style: none;
+	 		display: flex !important;
+   			align-items: center !important;
+   			justify-content: center !important;
+		}
+		.signup-now{
+			font-size: 42px !important;
+			margin-left: 30% !important;
+			margin-right: 30% !important;
+		}
+		.signup-text{
+			font-size: 25px !important;
+			margin-left: 28% !important;
+			margin-right: 28% !important;
+			margin-bottom: 3% !important;
+		}
 }
 
 .cards{
@@ -450,7 +592,7 @@ nav{
 
 }
 .font> h3{
-	font-size: 42px;
+	/* font-size: 42px; */
 	color: #44805c;
 	 padding-bottom: 5%;
 	margin-top: 0%;
@@ -466,7 +608,7 @@ nav{
 
 }
 .signup-now{
-    color: #44805c;
+    color:#194438;
 	
 } 
 .signup-text{
@@ -475,20 +617,20 @@ nav{
 }
 .row{
 	font-size: 16px;
-	/* text-align: center; */
+	
 }
 .text{
 	padding-left: 15%;
 	padding-right: 15%;
 	text-align: left;
 }
-.footer > ul{
+.fclass > ul{
 	list-style: none;
 	display: flex;
    align-items: center;
    justify-content: center;
 }
-.footer > ul >li{
+.fclass > ul >li{
 	
 	padding: 25px;
 }
