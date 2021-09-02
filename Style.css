@@ -1,3 +1,21 @@
+
+@font-face {
+    font-family: 'Daikon';
+    src: url('Daikon-ExtraLight.eot');
+    src: local('Daikon Extra Light'), local('Daikon-ExtraLight'),
+        url('Daikon-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Daikon-ExtraLight.woff2') format('woff2'),
+        url('Daikon-ExtraLight.woff') format('woff'),
+        url('Daikon-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 nav{
 	display: flex;
 	justify-content: space-around;
@@ -8,29 +26,34 @@ nav{
 	z-index: 999;
 	background-color: whitesmoke;
 	width: 100%;
+
 	
 }
-.nav-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 20px;
-	width: 100%;
-   	max-width: 1200px;
-	
-	
-}
+ 
 .menu{
 	display: none;
 	
 }
 .menu__bar{
-	display: block;
+	display: none;
 }
 .right-button{
-	display: none;
+
+	display: block;
+	/* border: none;
+	outline: none;
+	background-color:#235c48 ; */
 	
 }
+	.right-button > button{
+		outline: none;
+		border: none;
+		background-color: #235c48;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 6px;
+		font-weight: bold;
+	}
 .button{
 	display: none;
 }
@@ -48,28 +71,35 @@ nav{
 	  display: flex;
      align-items: center;
 	 justify-content: center;
+	 /* font-size: 16px;
+	 font-weight: 700;
+	 line-height: 24px; */
 	  
 	  
   } 
    .menu > ul > li{
   padding:0px 20px ;
   } 
-  .right-button > button{
-  
+  /* .right-button > button{
+      border: none;
+	  outline: none;
+
 	  background-color: #194438 ;
 	  color: white;
-	  border-radius: 10%;
-	  font-size: 24px;
+	  border-radius: 5%;
+	  font-size: 18px !important;
+	  padding: 10px 22px;
 	  
-  }
+  } */
   .button-button > button{
   
-	background-color: #44805c ;
-	color: white;
-	border-radius: 5%;
-	font-size: 16px;
-	border: 0px;
-	outline: 0px;
+	 	outline: none;
+		border: none;
+		background-color: #235c48;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 6px;
+		font-weight: bold;
 	
 }
   .sidebar{
@@ -144,9 +174,12 @@ nav{
 		padding-left: 10% !important;
 		padding-right: 5% !important; 
 	}  
-	.right-button{
+	/* .right-button{
 		display: block;
-	}
+		font-size: 18px !important;
+		font-weight: 700 !important;
+		line-height: 28.287px !important;
+	} */
 	.button{
 		display: block;
 	}
@@ -158,10 +191,15 @@ nav{
 	}
 	.nav-header{
 		display: block;
-		width: 0%;
+		/* width: 0%;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 24px; */
 	}
 	.font> h3{
-		font-size: 42px !important;
+		font-size: 40px !important;
+		font-weight: 400 !important;
+		line-height: 40px !important;
 		color: #44805c;
 	   	padding-bottom: 5%;
 		margin-top: 5%;
@@ -172,12 +210,31 @@ nav{
 	.signup-now{
 		margin-left: 32% !important;
 		margin-right: 32% !important;
+		font-size: 42px;
+		font-weight: 400 !important;
+		line-height: 38px !important; 
+		color:rgb(41, 77, 59)
 	}
+	
 	.signup-text{
 		margin-left: 30% !important;
 		margin-right: 30% !important;
 		margin-bottom: 3% !important;
+		font-size: 32px;
+		font-weight: 400 !important;
+		line-height: 32px !important; 
+		color:#194438;
 		
+	}
+	.button-button > button{
+		/* outline: none;
+		border: none;
+		background-color: #235c48;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 6px;
+		font-weight: bold; */
+		display: block;
 	}
 	.frow{
 		display: none !important;
@@ -188,20 +245,60 @@ nav{
 		   align-items: center !important;
 		   justify-content: center !important;
 	}
+
+	/* .alignment{
+		display: flex;
+		flex-direction: column;
+		text-align: left !important;
+		align-items: left !important;
+		padding-left: 0 !important;
+	} */
 	/* .Arrange{
 		display: block !important;
 	} */
-	.alignment{
-		display: block !important;
-		/* display: flex !important;
-		text-align: left !important;
-		align-items: left !important;
-		padding-left: 10% !important;
-		margin-right: 10% !important;
-		padding-top: 4%!important;	
-		text-align-last: left !important; */
+	#align_item{
+		/* background-color: black; */
+		display: flex;
+		flex-direction: column !important;
+	    margin: 0 10px ;
+		padding: 0 !important;
 
 	}
+	#wrapper-row-item{
+		/* background-color: black; */
+		display: flex;
+		flex-direction: column !important;
+	    margin: 0 10px ;
+		padding: 0 !important;
+	}
+
+	#align_item  > .col-md-4{
+		/* border: 2px solid red; */
+	    max-width: 100%;
+		flex-basis: 100%;
+         align-items: center;
+		width: 100% !important;
+		display: flex;
+
+	}
+	#align_item  > .col-md-6{
+		/* border: 2px solid red; */
+	    max-width: 100%;
+		flex-basis: 100%;
+         align-items: center !important;
+		 padding-left: 5% !important;
+		width: 100% !important;
+		display: flex;
+
+	}
+	/* #align_item > #align{
+		margin-right: -30px !important; */
+
+		/* width: 100% !important;
+		display: flex;
+		flex:1 !important ;
+		border: 1px solid red; */
+	/* } */
 	/* .tt{
 		display: block !important;
 		align-items: left !important;
@@ -213,8 +310,11 @@ nav{
 		height: 950px;
 		border-radius: 9px;
 		color: white;
-		margin-left: 2% !important;
+		margin-left: 0% !important;
 		margin-right: 2% !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important;
 	}
 	.card2{
 	
@@ -222,6 +322,9 @@ nav{
 		height: 410px;
 		border-radius: 9px;
 		margin-left: 5% !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important; 
 	}
 	.card1{
 	
@@ -230,6 +333,9 @@ nav{
 		height: 410px;
 		border-radius: 9px;
 		margin-left: 5% !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important; 
 		
 	}
 }
@@ -239,14 +345,24 @@ nav{
 		display: block;
 		align-items: center;
 		justify-content: space-between;
+		font-size: 16px !important;
+		font-weight: 700 !important;
+		line-height: 24px !important;
+		color: #194438;
 
 	}
 	.container-fluid{
 		display: block;
 	}
-	.right-button{
+	/* .right-button{
 		display: block;
-	}
+		font-size: 18px;
+		font-weight: 700 !important;
+		line-height: 28.287px;
+		padding: 10px 20px !important;
+		
+		/* width: 150px !important; */
+	/* } */ 
 	.button{
 		display: block;
 	}
@@ -258,10 +374,15 @@ nav{
 	}
 	.nav-header{
 		display: block;
-		width: 0%;
+		/* width: 0%;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 24px; */
 	}
 	.font> h3{
-		font-size: 52px !important;
+		font-size: 50px !important;
+		font-weight: 400;
+		line-height: 50px;
 		color: #44805c;
 	   	padding-bottom: 5%;
 		margin-top: 5%;
@@ -272,12 +393,26 @@ nav{
 	.signup-now{
 		margin-left: 32% !important;
 		margin-right: 32% !important;
+		font-size: 58px;
+		font-weight: 400;
+		line-height: 50px;
 	}
 	.signup-text{
 		margin-left: 33% !important;
 		margin-right: 33% !important;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 32px;
 		
 	}
+	.button-button > button{
+		/* margin-top: 2%;
+		font-size: 18px !important;
+		font-weight: 400 !important;
+		line-height: 28.287px !important; */
+		display: block;
+	}
+
 	.frow{
 		display: none !important;
 	}
@@ -286,6 +421,16 @@ nav{
 		 display: flex !important;
 		   align-items: center !important;
 		   justify-content: center !important;
+	}
+	/* .center > h1{
+		font-size: 40px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important;
+	} */
+	.padding{
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important;
 	}
 }
 
@@ -296,28 +441,57 @@ nav{
 		
 	}
 	.nav-header{
-		display: block;
 		display: flex;
-		margin-bottom: 0% !important;
-		margin-left: 7% !important;
-	}
+		justify-content: space-between;
+		align-items: center;
+		font-size: 20px;
+		width: 95%;
+		max-width: 1200px;	
+		margin-left: 8% !important;
+		
+	
+		
+		
+	 }
+	 .menu__bar{
+		 display: block;
+		 padding-left: 20px !important;
+	 }
 	
 	.font > h3{
 		margin-top: 8% !important;
 		margin-left: 22% !important;
 		margin-right: 22% !important;
 		padding-bottom: 8% !important;
+		font-size: 30px !important;
+		font-weight: 400 !important;
+		line-height: 36px !important;
+	}
+	.card1 > h5{
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important;
+	}
+	.card2 > h5{
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important;
 	}
 	.display{
 		display: none!important;
 	}
 	.signup-now{
-		font-size: 37px !important;
+		font-size: 42px !important;
+		font-weight: 400 !important;
+		line-height: 46px !important;
 		margin-left: 15% !important;
 		margin-right: 15% !important;
+		color:  rgb(25, 68, 56);
 	}
 	.signup-text{
-		font-size: 25px !important;
+		font-size: 26px !important;
+		font-weight: 400 !important;
+		line-height: 24px !important;
 		margin-left: 12% !important;
 		margin-right: 12% !important;
 		margin-bottom: 5% !important;
@@ -361,8 +535,17 @@ nav{
 		font-size: 25px !important;
 		padding-left: 0% !important;
 	}
+	.menu__bar > #menu_bar{
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important;
+		color:  rgb(26, 32, 44);
+	}
 	
 	.frow{
+		font-size: 16px !important;
+		font-weight: 700 !important;
+		line-height: 24px !important;
 		display: block;
 		padding-left: 15% !important;
 		padding-right: 15% !important;
@@ -374,27 +557,39 @@ nav{
 	.fclass{
 		display: none !important;
 	}
-	.button-button > button{
-		border-radius: 8% !important;
-		border-color: #44805c !important;
-		border: none;
-		outline: 0px;
+	.button-button > button {
+		display: block;
 
 	}
+	.right-button{
+		display: none;
+	}
+
 }
 @media (min-width: 641px) and (max-width: 768px) {
 
 		.menu{
 		display: none;
+		font-weight: 900 !important;
 		
 	}
-	.nav-header{
-		display: block;
-		display: flex;
-		margin-bottom: 0% !important;
-		margin-left: 5% !important;
+	.right-button{
+		display: none;
 	}
 	
+	.nav-header{
+		display: flex;
+		justify-content: space-between;
+		 align-items: center;
+		font-size: 20px;
+		width: 100%;
+		max-width: 1200px;	
+		margin-left: 8% !important;
+		
+	 }
+	 .menu__bar{
+		 display: block;
+	 }
 	.text{
 		display: flex !important;
 		
@@ -421,12 +616,14 @@ nav{
 		
 	}
 	.card2{
+		align-items: center !important;
 		height: 370px!important;
 		width: 85% !important;
 		margin-left: 8% !important;
 		border-radius: 9px;
-		margin-left: 15%;
+		/* margin-right: 10% !important; */
  	}
+
 	
 	.card1{
 		height: 370px !important;
@@ -449,17 +646,43 @@ nav{
 	}
 	.font >h3{
 		padding-top: 15% !important;
-		font-size: 35px !important;
+		display: flex !important;
+		padding-left: 5% !important;
+		padding-right: 5% !important;
+		font-size: 30px !important;
+		font-weight: 400 !important;
+		line-height: 36px !important;
+		margin-left: 15% !important;
+		margin-right: 15% !important;
 		
 	}
+	.signup-now{
+		font-size: 42px !important;
+		font-weight: 400 !important;
+		line-height: 38px !important;
+		color:  rgb(41, 77, 59) ;
+	}
+	.signup-text{
+		font-size: 26px !important;
+		font-weight: 400 !important;
+		line-height: 24px !important;
+		color:  rgb(41, 77, 59) ;
+		margin-bottom: 4% !important;
+	}
+	/* .padding{
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+	} */
 	.fclass{
 		display: none !important;
 	}
 	.frow{
 		text-align: center !important;		
+		margin-left: 25% !important;
+		margin-right: 25% !important;
 	}
 	.button-button > button{
-		font-size: 42px !important;
+		display: block;
 	}
 }
 @media (min-width: 769px) and (max-width: 992px){
@@ -467,6 +690,10 @@ nav{
 	.cards{
 		width: 110% !important;
 		height: 570px !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important; 
+		
 	}
 	.card2{
 
@@ -474,6 +701,10 @@ nav{
 		height: 350px !important;
 		border-radius: 9px;
 		margin-left: 8% !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important; 
+		
 	}
 	.card1{
 
@@ -482,6 +713,9 @@ nav{
 		height: 350px !important;
 		border-radius: 9px;
 		margin-left: 8% !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		line-height: 24px !important; 
 		
 	}
 	.wraper{
@@ -514,43 +748,68 @@ nav{
 		display: none;
 	}
 	.font > h3{
-		font-size: 42px !important;
+		font-size: 40px !important;
+		font-weight: 400 !important;
+		line-height: 40px !important;
 		color: #44805c;
 		padding-bottom: 2%;
 		margin-top: 10% !important;
-		margin-left: 32% !important;
-		margin-right: 32% !important;
+		margin-left: 31% !important;
+		margin-right: 31% !important;
 		}
 		.menu{
 			display: block;
-			padding-left: 5% !important;
-			padding-right: 5% !important;
-			font-size: 12px !important;
+			align-items: center !important;
+			padding-left: 8px !important;
+			padding-right: 0px !important;
+			font-size: 15px !important;
+			font-weight: 500 !important;
+
 			
 			
+		}
+		.menu > ul{
+			
+			padding-left: 70px !important;			
+		}
+		.menu > ul >li{
+			
+			padding-left: 8px !important;
+			padding-right: 8px !important;
+		
 		}
 		.img-container{
 			display: block;
 			padding-left: 65% !important;
 		}
-		.right-button {
-			display: block;
-			padding-right: 3% !important;
-			display: inline-block !important;
+		.right-button{
+			padding-left: 5px !important;
+			margin-right: 10px !important;
+		}
+		.padding > h6 {
+			font-size: 16px !important;
+		}
+	
+		nav{
+			
+			justify-content: space-between;
 			
 		}
 		.nav-header{
 			display: block;
+			
+			
 		}
 		
 		.menu__bar{
 			display: none;
 		}
-		.button-button{
-			align-items: center !important;
+		.button-button > button{
+			display: block;
 		}
 		.button>button{
 			text-align: center !important;
+			
 		}
 		.frow{
 			display: none !important;
@@ -563,11 +822,15 @@ nav{
 		}
 		.signup-now{
 			font-size: 42px !important;
+			font-weight: 400 !important;
+			line-height: 38px !important;
 			margin-left: 30% !important;
 			margin-right: 30% !important;
 		}
 		.signup-text{
-			font-size: 25px !important;
+			font-size: 26px !important;
+			font-weight: 400 !important;
+			line-height: 24px !important;
 			margin-left: 28% !important;
 			margin-right: 28% !important;
 			margin-bottom: 3% !important;
@@ -580,6 +843,9 @@ nav{
 	height: 950px;
 	border-radius: 9px;
 	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 .card2{
 
